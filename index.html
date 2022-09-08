@@ -1,28 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    <div class="container ">
-        <main class="main">
-            <div class="main__item">
-                <h1 class="main__title">Украшения собственного производства</h1>
-                <p class="main__text">Все изделия создаются с любовью для каждого клиента</p>
-                <a href="#" class="link">Сделать расчет и заказ</a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="main">
+        <div class="main__item">
+          <h1 class="main__title">Украшения собственного производства</h1>
+          <p class="main__text">
+            Все изделия создаются с любовью для&nbspкаждого клиента
+          </p>
+          <a href="#" class="link">Сделать расчет и заказ</a>
+        </div>
+        <div class="maim__images">
+          <img src="images\Screenshot_26-7 1.png" />
+          <img src="images\- 1.png" />
+        </div>
+      </main>
+      <section class="products">
+        <h2 class="title-h2">Наши изделия</h2>
+        <div class="grid">
+          <div class="grid__cover">
+            <img src="images/products/01.png" alt="" />
+          </div>
+          <div class="grid__cover">
+            <img src="images/products/02.png" alt="" />
+          </div>
+          <div class="grid__cover">
+            <img src="images/products/03.png" alt="" />
+          </div>
+          <div class="grid__cover">
+            <img src="images/products/04.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="cost">
+        <div class="cost__title">
+            <svg class="circle" width="200" height="200" viewBox="0 0 200 200">
+                <path id="circleShape" class="circle__shape" d="M 20, 100 a 80,80 0 1,1 160,0 a 80,80 0 1,1 -160,0" fill="none"></path>
+                <path class="circle__arrow" d="M 75 100 L 125 100 L 110 85 M 125 100 L 110 115" fill="none" stroke="#2B2024" stroke-width="2"></path>
+                <text class="circle__text">
+                    <textPath href="#circleShape">
+                        Расчитать стоимость
+                    </textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="cost__calc">
+            <form class="form">
+                <p class="form__text">Выберите изделие:</p>
+                <select class="form__select" id="">
+                    <option value="" disabled> Выбрать из списка</option>
+                    <option value=""> Серьги (1000 $)</option>
+                    <option value=""> Кольцо (1500 $)</option>
+                    <option value=""> Ожерелье (1700 $)</option>
+                </select>
+                <p class="form__text">Укажите количестов:</p>
+                <input class="form__input" type="number" value="0">
+                <button type="button"></button>
+            </form>
+            <div>
+                <p> Итог: 1000$</p>
+                <p>Оставьте заявку по почте: <a href="mailto:rimma.kopylova.02@gmail.com">rimma.kopylova.02@gmail.com</a></p>
             </div>
-            <div class="maim__images">
-                <img src="images\Screenshot_26-7 1.png">
-                <img src="images\- 1.png">
-            </div>
-        </main>
+        </div>
+
+      </div>
     </div>
 
     <script src="scripts/script.js"></script>
-</body>
+  </body>
 </html>
